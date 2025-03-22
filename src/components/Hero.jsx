@@ -150,7 +150,7 @@ const Hero = () => {
                     </div>
                     
                     <video ref={nextVideoRef} src={getVideoSrc(currentVideo)} loop muted playsInline id='next-video' className='absolute-center invisible absolute z-20 size-64 object-cover object-center' onLoadedData={handleVideoLoad}/>
-                    <video src={getVideoSrc(currentVideo == totalVideos - 1 ? 1 : currentVideo)} loop muted autoPlay playsInline className='absolute left-0 top-0 size-full object-cover object-center' onLoadedData={handleVideoLoad}/>
+                    <video src={getVideoSrc(currentVideo == totalVideos - 1 ? 1 : currentVideo)} loop muted autoPlay playsInline  preload="auto" className='absolute left-0 top-0 size-full object-cover object-center' onLoadedData={handleVideoLoad}/>
                 </div>
                 
                 <h1 className='special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75'>G<b>a</b>ming</h1>
